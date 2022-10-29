@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh 'docker build -t test .'
+        echo 'ahihi'
       }
     }
 
