@@ -1,3 +1,5 @@
 echo ${USER}
-docker build -t test_hello:least .
-docker run test_hello:least
+
+
+docker build  -t ahihi:least .
+docker run ahihi:least
