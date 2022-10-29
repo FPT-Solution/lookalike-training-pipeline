@@ -1,6 +1,6 @@
 echo ${USER}
-sudo usermod -a -G docker user
-sudo chown root:docker /var/run/docker.sock
+sudo usermod -aG docker $USER
+sudo reboot
 echo 'setup done'
 docker build -t test_hello:least .
 docker run test_hello:least
