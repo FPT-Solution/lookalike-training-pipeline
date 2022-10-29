@@ -1,4 +1,4 @@
 echo ${USER}
-sudo chown root:docker /var/run/docker.sock
+sudo usermod -aG docker ${USER}
 docker build -t test_hello:least .
 docker run test_hello:least
