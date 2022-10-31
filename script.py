@@ -6,10 +6,16 @@ import os
 
 def run():
     experiment_id = os.environ.get('experiment_id')
-    conn_string = os.environ.get('conn_string')
+    conn_string = os.environ.get('connect_string')
     container_name = os.environ.get('container_name')
     data_storage_info = os.environ.get('data_storage_info')
     seed_storage_info =  os.environ.get('seed_storage_info')
+
+    print(f'experiment_id {experiment_id}')
+    print(f'connect_string {conn_string}')
+    print(f'container_name {container_name}')
+    print(f'data_storage_info {data_storage_info}')
+    print(f'seed_storage_info {seed_storage_info}')
 
     seed_config = {
         "container_name": container_name,
