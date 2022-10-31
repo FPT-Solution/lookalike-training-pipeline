@@ -3,10 +3,6 @@ pandas
 scikit-learn
 lightgbm
 xgboost
-# azureml-sdk
-# azureml-core
-# azure-kusto-data
 azure-storage-blob
-# azure-kusto-ingest
 
 
